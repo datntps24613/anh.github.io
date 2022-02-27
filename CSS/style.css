@@ -1,0 +1,240 @@
+.abc{
+    color: red;  
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background: #FFCBCB;
+}    
+.container{
+    width: 980px;
+    margin: auto; /*căn lề*/
+}
+img{
+    width:100%;
+}
+header .top-nav img{
+    width: 30%;
+    margin: 20px 0;
+}
+header{
+    text-align: center;
+}
+header ul{
+    background-color: #FF5959;
+}
+header .bottom-nav{
+    background:#FF5959 ;
+    display: flex; /*đây là hiển thị dạng flexbox*/
+    justify-content: space-between;
+    align-items: center;
+}
+h2{
+    text-align: center;
+    font-family: Cambria;
+    color:#FF5151;
+} 
+header ul{
+    margin: 0;
+}
+header ul li{
+    list-style: none; /*// dùng để bỏ dấu chấm*/
+    display: inline-block; /*inline là cùng dọc, con block như là cái khối í, nó xếp theo dọc, inline-block là vùa có thể xép ngang và dọc*/
+    /* margin: 10px; dãn cách| 10px = top 10px, right 10px, botton 10px, left 10px  | đây là cách  viết ngắn ngọn */
+    padding: 5px;
+    /* border-right: 1px solid white; gạch dọc */
+    
+}
+header a{
+    text-decoration: none; /*bỏ dấu gạch chân*/
+    font-size: 18px;
+    text-transform: capitalize; /*dịnh dạng chữ| HOA, thường: viết hoa chữ cái đầu của từ*/
+    color:white;
+}
+header a:hover{
+    color: rgb(243, 188, 243);
+    text-decoration: underline;
+}
+/*header li:hover{
+    background: #FF9292;
+}*/
+header ul ul{
+    position: absolute;
+    width: 150px;
+    margin: 5px 0 0 0;
+    padding: 0 0 0 7px;
+    display: none;
+}
+header ul li:hover ul{
+    display: block;
+}
+header ul ul a{
+    background-color: #FF5959;
+    color: white;   
+    display: block;    
+}
+header li li:hover{
+    background: #FF5959;
+    text-decoration: underline;
+
+}
+header ul ul a:hover{
+    /*background-color: #FF9292;*/
+    color: rgb(243, 188, 243);
+}
+form{
+    margin-right: 5px; /* cách lề phải*/
+}
+form input{ 
+    padding: 3px; /*nệm (cộng) thêm khoảng trắng*/
+}
+.content img{
+    width: 200px;
+    height: 200px;
+/* }
+.content{
+    display:grid;
+    grid-template-columns: 1fr 250px;
+    text-align: center;
+    grid-gap: 10px; /*khoảng cách cột */ 
+} */
+.main{
+    text-align: center;
+}
+/* 
+.content-right .about{
+    background: #F999B7;
+    text-align: center;
+    padding: 15px 20px 0 20px; top 15px | right 20px | bottom 0px | left 20px chạy theo hướng kim đồng hồ
+    hoặc làm như này
+   padding-top: 15px;
+   padding-right: 20px;
+   padding-bottom: 0;
+   padding-left: 20px;
+   height: 97%;
+}
+.content .content-right  .about img{
+    width: 50px;
+    height: 50px;
+    margin: 20px 5px 0 5px;
+}
+.content .content-right  h3{
+    background: #FF7272;
+    color: white;
+    margin: 0;
+    padding: 7px;
+}
+.content .content-right .about li{
+    text-align: justify;
+}
+iframe{
+    height: 10%;
+    width: 100%;
+}
+.fab fa-facebook{
+    width: 50px;
+    height: 50px;
+}
+*/
+ .content-left
+{
+    text-align: center;
+}
+/* .content .content-left .row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /*fr: tỉ lêj | nó tự dộng chia cho mình ko phải tính như dùng float
+}
+*/
+.content .content-left .row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 10px; /*khoảng cách giữa các cột*/
+}
+.row .collumn{
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;   
+}
+.row .collumn:hover {
+    border-width: 2px;
+    border-color: orangered;
+    border-style: solid;    
+}
+.row .collumn a{
+    display: block;
+    margin: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color:black;
+    font-weight: 500;
+}
+.row .collumn a:hover{
+    color: #FF9F45;
+}
+del{
+    font-style: italic;
+}
+.row .collumn p{
+    color: red;
+    font-weight: 600;
+    margin: 5px;
+}
+.content .content-left .row .img:hover{
+    transform: translateY(-40px);
+}
+.row .collumn button{
+    padding: 7px;
+    border: 2px solid #FF9292;
+    border-radius: 3px;
+    background: rgb(250, 250, 183);
+}
+
+ .row .collumn button:hover{
+     background-color: #CAF0F8;
+}
+ 
+ .row .collumn button:active{
+     background-color: red;
+} 
+ .row .collumn .buy{
+     display:flex;
+     justify-content: center;
+     align-items: center;
+}
+ .row .collumn .buy .card{
+     width: 35px;
+     height: 35px;
+    margin-right: 5px;
+
+}
+ .row .collumn .buy a{
+     padding: 0;
+}
+footer{
+    display: grid;  /*hiển thị dạng lưới*/
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+
+}
+footer .left, .mid, .right{
+    text-align: center;
+}
+footer{
+    display: grid; 
+    grid-template-columns: 350px 1fr 1fr;
+    grid-gap: 20px;
+    background: #FFEBCC;
+}
+footer left, right, li, footer h3{
+    list-style: none;
+    text-align: left;
+    padding-left: 15px;    
+}
+
+
+
+
